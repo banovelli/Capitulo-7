@@ -19,7 +19,7 @@ namespace House
         }
         public Location [] Exits;
 
-        public virtual string Description()
+        public virtual string Description
         {
             get {
                 string description = "Você está em " + name

@@ -8,7 +8,7 @@ namespace House
 {
     public class Room : Location
     {
-        public Room(string decoration, string name)
+        public Room(string name, string decoration)
              :base(name)
         {
             this.decoration = decoration;

@@ -8,7 +8,7 @@ namespace House
 {
     public class Outside : Location
     {
-        public Outside(bool hot, string name)
+        public Outside(string name, bool hot)
              :base(name)
         {
             this.hot = hot;
@@ -16,5 +16,16 @@ namespace House
 
         private bool hot;
         public bool Hot { get { return hot; } }
+
+        public override string Description
+        {
+            get
+            {
+                string NewDescription = base.Description;
+                if (hot)
+                    NewDescription += " É muito quente.";
+                return NewDescription;
+            }
+        }
     }
 }

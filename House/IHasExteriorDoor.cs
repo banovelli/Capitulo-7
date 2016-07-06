@@ -5,7 +5,9 @@ using System.Text;
 
 namespace House
 {
-    class IHasExteriorDoor
+    public interface IHasExteriorDoor
     {
+        string DoorDescription { get; }
+        Location DoorLocation { get; set; }
     }
 }
